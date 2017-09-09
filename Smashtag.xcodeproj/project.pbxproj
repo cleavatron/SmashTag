@@ -8,20 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		845322E31F61ADA700753E65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845322E21F61ADA700753E65 /* AppDelegate.swift */; };
-		845322E51F61ADA700753E65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845322E41F61ADA700753E65 /* ViewController.swift */; };
 		845322E81F61ADA700753E65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845322E61F61ADA700753E65 /* Main.storyboard */; };
 		845322EA1F61ADA700753E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845322E91F61ADA700753E65 /* Assets.xcassets */; };
 		845322ED1F61ADA700753E65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845322EB1F61ADA700753E65 /* LaunchScreen.storyboard */; };
+		845322F61F61B18600753E65 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845322F51F61B18600753E65 /* TweetTableViewController.swift */; };
+		845322F81F61B79200753E65 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845322F71F61B79200753E65 /* Twitter.framework */; };
+		845322F91F61B79200753E65 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 845322F71F61B79200753E65 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		845322FC1F625E3100753E65 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845322FB1F625E3100753E65 /* TweetTableViewCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		845322FA1F61B79200753E65 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				845322F91F61B79200753E65 /* Twitter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		845322DF1F61ADA600753E65 /* Smashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845322E21F61ADA700753E65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		845322E41F61ADA700753E65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		845322E71F61ADA700753E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845322E91F61ADA700753E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845322EC1F61ADA700753E65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845322EE1F61ADA700753E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845322F51F61B18600753E65 /* TweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
+		845322F71F61B79200753E65 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		845322FB1F625E3100753E65 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845322F81F61B79200753E65 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +58,7 @@
 		845322D61F61ADA600753E65 = {
 			isa = PBXGroup;
 			children = (
+				845322F71F61B79200753E65 /* Twitter.framework */,
 				845322E11F61ADA600753E65 /* Smashtag */,
 				845322E01F61ADA600753E65 /* Products */,
 			);
@@ -54,14 +75,23 @@
 		845322E11F61ADA600753E65 /* Smashtag */ = {
 			isa = PBXGroup;
 			children = (
-				845322E21F61ADA700753E65 /* AppDelegate.swift */,
-				845322E41F61ADA700753E65 /* ViewController.swift */,
+				845322F51F61B18600753E65 /* TweetTableViewController.swift */,
+				845322FB1F625E3100753E65 /* TweetTableViewCell.swift */,
 				845322E61F61ADA700753E65 /* Main.storyboard */,
-				845322E91F61ADA700753E65 /* Assets.xcassets */,
-				845322EB1F61ADA700753E65 /* LaunchScreen.storyboard */,
 				845322EE1F61ADA700753E65 /* Info.plist */,
+				845322F41F61ADCD00753E65 /* Supporting Files */,
 			);
 			path = Smashtag;
+			sourceTree = "<group>";
+		};
+		845322F41F61ADCD00753E65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				845322E21F61ADA700753E65 /* AppDelegate.swift */,
+				845322E91F61ADA700753E65 /* Assets.xcassets */,
+				845322EB1F61ADA700753E65 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +104,7 @@
 				845322DB1F61ADA600753E65 /* Sources */,
 				845322DC1F61ADA600753E65 /* Frameworks */,
 				845322DD1F61ADA600753E65 /* Resources */,
+				845322FA1F61B79200753E65 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,8 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845322E51F61ADA700753E65 /* ViewController.swift in Sources */,
 				845322E31F61ADA700753E65 /* AppDelegate.swift in Sources */,
+				845322F61F61B18600753E65 /* TweetTableViewController.swift in Sources */,
+				845322FC1F625E3100753E65 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +334,7 @@
 				845322F31F61ADA700753E65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
